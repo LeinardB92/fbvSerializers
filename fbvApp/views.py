@@ -1,6 +1,9 @@
 from django.shortcuts import render
+# importamos el modelo sobre el que vamos a trabajar
 from fbvApp.models import Student
+# Serializador para serializar y deserializar los datos de nuestro modelo
 from fbvApp.serializers import StudentSerializer
+# 'Response', devuelve contenido que se puede representar en varios tipos de contenido, según la solicitud del cliente también podrías usar HttpResponse, pero 'Response'. El uso de la clase Response simplemente proporciona una interfaz más agradable para devolver respuestas de API web, que se pueden representar en múltiples formatos..
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.decorators import api_view
